@@ -39,4 +39,4 @@ function Todo({todos, completeTodo, removeTodo, updateTodo}) {
 
 }
 
-export default Todo
+export default Todo;
