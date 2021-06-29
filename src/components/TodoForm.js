@@ -5,7 +5,8 @@ function TodoForm(props) {
 
     const handleChange = e => {
         setInput(e.target.value);
-    }
+    };
+
     const handleSubmit = e => {
         e.preventDefault();
 
@@ -16,7 +17,7 @@ function TodoForm(props) {
 
         setInput('');
         //sets input on button click and clears out input box
-
+        console.log(input)
     };
 
     return (
@@ -28,7 +29,7 @@ function TodoForm(props) {
                 name="text"
                 className="todo-input"
                 onChange={handleChange}
-            />
+            />            
             <button className="todo-button">Add todo</button>
         </form>
 
